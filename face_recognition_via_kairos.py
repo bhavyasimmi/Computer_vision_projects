@@ -6,8 +6,8 @@ url = "https://api.kairos.com/detect"
 # put your keys in the header taken from kairos page
 
 headers = {
-    "app_id": "2b0335d7",
-    "app_key": "28e7a2915e876413a7f33b2eccd06a62"
+    "app_id": "##########",
+    "app_key": "########################"
 	}
 
 #files= {'image':open('./test_frames/file 0.png','rb')}
