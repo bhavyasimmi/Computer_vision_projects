@@ -17,9 +17,12 @@ while cam.isOpened():
 	cv2.imshow("camera0",frame)
 	cv2.imshow("camera1",new_image)
 
+	# for saving image frames
+	for i in range(1000):
+		cv2.imwrite("frames_of_image.jpg",frame)
 
 	# if no action taken by the user regarding window and not quited by action of 'q' button till the the live images will be taken on pressing any button on the keyboard 
-	if cv2.waitKey(0) & 0xFF == ord('q'):
+	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
 
 cv2.destroyAllWindows()
