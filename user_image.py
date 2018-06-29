@@ -34,7 +34,12 @@ elif i == "1/8":
 user_image = img[0:int(shape[0]/part),0:int(shape[1]/part)]
 
 print("the image after partition is\n")
-cv2.imshow("user_image",user_image)
+#cv2.imshow("user_image",user_image)
+
+rem_image = img[int(shape[0]/part):shape[0],int(shape[1]/part):shape[1]]
+
+cv2.imshow("remaining_image",rem_image)
+
 
 #time.sleep(4)
 cv2.waitKey(0)
