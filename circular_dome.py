@@ -11,7 +11,6 @@ j = 50
 
 # write text on image
 #           image    text           position of text     font of text    font_size    color   font_width   line_type
-cv2.putText(image, "Text on image", (100,100), cv2.FONT_HERSHEY_SIMPLEX, 1 , (0,0,250), 1, cv2.LINE_AA)
 
 
 
@@ -36,6 +35,7 @@ cv2.putText(image, "Text on image", (100,100), cv2.FONT_HERSHEY_SIMPLEX, 1 , (0,
 
 # make circles on the checked image 
 while i!=0:
+	cv2.putText(image, "Text on image", (0,0), cv2.FONT_HERSHEY_SIMPLEX, 1 , (0,0,250), 1, cv2.LINE_AA)
 	cv2.circle(image,(256,256),i,(100+j,10+j,50+j),-1)
 	#cv2.circle(image,(256,256),i,(255,0,0),8)
 	cv2.imwrite("new_circle.png",image)
